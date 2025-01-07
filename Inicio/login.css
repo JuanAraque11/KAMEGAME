@@ -1,0 +1,155 @@
+/* styles.css */
+
+/* General reset and box model settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2f; /* Fondo oscuro para resaltar los elementos */
+    color: #fff; /* Texto en blanco para contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* La altura ocupa toda la pantalla */
+    margin: 0;
+  }
+  
+  /* Login container styles */
+  .login-container {
+    display: flex;
+    background-color: #282a36; /* Fondo ligeramente más claro para el contenedor */
+    border-radius: 8px;
+    overflow: hidden; /* Elimina cualquier contenido que sobresalga */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para efecto de profundidad */
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  /* Form section */
+  .login-form {
+    padding: 40px;
+    flex: 1; /* Hace que esta sección ocupe todo el espacio disponible si no hay ilustración */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Titles */
+  .login-form h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffb86c; /* Color para destacar subtítulos */
+  }
+  
+  /* Form group styles */
+  .form-group {
+    margin-bottom: 20px; /* Espaciado entre los campos */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px; /* Espaciado entre el label y el input */
+    font-size: 0.9rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #44475a; /* Borde gris oscuro */
+    border-radius: 4px;
+    background-color: #383a59; /* Fondo oscuro del campo */
+    color: #fff;
+  }
+  
+  /* Hover y enfoque en los campos */
+  .form-group input:focus {
+    outline: none;
+    border-color: #ffb86c; /* Resalta el borde al hacer foco */
+  }
+  
+  /* Form options */
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-options a {
+    color: #8be9fd; /* Color azul para enlaces */
+    text-decoration: none;
+  }
+  
+  .form-options a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Submit button */
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff5555; /* Botón rojo llamativo */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff4444; /* Cambia ligeramente el color al pasar el cursor */
+  }
+  
+  /* Signup link */
+  .signup-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .signup-link a {
+    color: #50fa7b; /* Color verde para enlaces */
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Illustration section */
+  .login-illustration {
+    display: none; /* Oculta por defecto si es una pantalla pequeña */
+    background-color: #44475a; /* Fondo gris oscuro para contraste */
+    flex: 1; /* Ocupa el mismo espacio que el formulario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-illustration img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive design: Mostrar ilustración en pantallas más grandes */
+  @media (min-width: 768px) {
+    .login-illustration {
+      display: flex;
+    }
+  }
+  
