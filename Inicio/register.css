@@ -1,4 +1,4 @@
-/* styles.css */
+/* styles for register.css */
 
 /* General reset and box model settings */
 * {
@@ -15,11 +15,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Altura mínima de pantalla */
-    padding: 20px; /* Padding para pantallas pequeñas */
+    min-height: 100vh;
+    padding: 20px;
   }
   
-  /* Login container styles */
+  /* Register container styles */
   .login-container {
     display: flex;
     flex-direction: column; /* Columna por defecto para pantallas pequeñas */
@@ -65,7 +65,9 @@
     font-size: 0.9rem;
   }
   
-  .form-group input {
+  .form-group input[type="text"],
+  .form-group input[type="password"],
+  .form-group input[type="file"] {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -73,21 +75,6 @@
     border-radius: 4px;
     background-color: #383a59;
     color: #fff;
-  }
-  
-  /* Form options */
-  .form-options {
-    display: flex;
-    flex-direction: column; /* Column layout for small screens */
-    align-items: flex-start;
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-  }
-  
-  .form-options a {
-    color: #8be9fd;
-    text-decoration: none;
-    margin-top: 10px; /* Spacing for small screens */
   }
   
   /* Submit button */
@@ -107,19 +94,19 @@
     background-color: #ff4444;
   }
   
-  /* Signup link */
-  .signup-link {
+  /* Register link */
+  .register-link {
     margin-top: 20px;
     text-align: center;
     font-size: 0.9rem;
   }
   
-  .signup-link a {
+  .register-link a {
     color: #50fa7b;
     text-decoration: none;
   }
   
-  .signup-link a:hover {
+  .register-link a:hover {
     text-decoration: underline;
   }
   
@@ -146,16 +133,6 @@
   @media (min-width: 768px) {
     .login-container {
       flex-direction: row; /* Form and illustration side by side */
-    }
-  
-    .form-options {
-      flex-direction: row; /* Inline layout for options */
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .form-options a {
-      margin-top: 0;
     }
   
     .login-illustration {
